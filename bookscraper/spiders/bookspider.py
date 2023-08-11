@@ -56,3 +56,7 @@ class BookspiderSpider(scrapy.Spider):
         book_item['description'] = book.xpath("//div[@id='product_description']/following-sibling::p/text()").get()
         book_item['price'] = book.css('p.price_color ::text').get()
         yield book_item
+
+
+
+

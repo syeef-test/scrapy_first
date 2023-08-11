@@ -21,13 +21,13 @@ FEEDS = {
 
 
 SCRAPEOPS_API_KEY = '99f64cc9-06fe-4790-9b8c-69aac48e205d'
-SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = 'https://headers.scrapeops.io/v1/user-agents'
+SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = 'https://headers.scrapeops.io/v1/browser-headers'
 SCRAPEOPS_FAKE_USER_AGENT_ENABLED = True
-SCRAPEOPS_NUM_RESULTS = 50
+SCRAPEOPS_NUM_RESULTS = 5
 
 DOWNLOADER_MIDDLEWARES = {
     # 'bookscraper.middlewares.BookscraperDownloaderMiddleware': 543,
-    'bookscraper.middlewares.ScrapeOpsFakeUserAgentMiddleware': 400,
+    'bookscraper.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware': 400,
 }
 
 
